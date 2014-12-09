@@ -244,7 +244,7 @@ HCURSOR CCreateWndDlg::OnQueryDragIcon()
 
 CString GetLastErrorString()
 {
-  const dwError=GetLastError();
+  const DWORD dwError=GetLastError();
   SetLastError(S_OK);
 
   HLOCAL hlocal=0;
