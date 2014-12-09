@@ -9,9 +9,11 @@
   <ItemDefinitionGroup>
     <Link>
       <OutputFile>..\..\..\bin\MSVC_$(PlatformToolset)_$(Platform)_$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+      <SubSystem>Windows</SubSystem>
     </Link>
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup />
