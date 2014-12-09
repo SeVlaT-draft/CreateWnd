@@ -38,8 +38,9 @@ RSC=rc.exe
 # PROP BASE Target_Dir ""
 # PROP Use_MFC 6
 # PROP Use_Debug_Libraries 0
-# PROP Output_Dir "Release"
-# PROP Intermediate_Dir "Release"
+# PROP Output_Dir "..\..\..\_Output\CreateWnd\MSVC_06_Release"
+# PROP Intermediate_Dir "..\..\..\_Output\CreateWnd\MSVC_06_Release"
+# PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Yu"stdafx.h" /FD /c
 # ADD CPP /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Yu"stdafx.h" /FD /c
@@ -52,7 +53,7 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=link.exe
 # ADD BASE LINK32 /nologo /subsystem:windows /machine:I386
-# ADD LINK32 /nologo /subsystem:windows /machine:I386
+# ADD LINK32 /nologo /subsystem:windows /machine:I386 /out:"..\..\..\bin\MSVC_06_Release/CreateWnd.exe"
 
 !ELSEIF  "$(CFG)" == "CreateWnd - Win32 Debug"
 
@@ -63,11 +64,12 @@ LINK32=link.exe
 # PROP BASE Target_Dir ""
 # PROP Use_MFC 6
 # PROP Use_Debug_Libraries 1
-# PROP Output_Dir "Debug"
-# PROP Intermediate_Dir "Debug"
+# PROP Output_Dir "..\..\..\_Output\CreateWnd\MSVC_06_Debug"
+# PROP Intermediate_Dir "..\..\..\_Output\CreateWnd\MSVC_06_Debug"
+# PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
-# ADD BASE CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Yu"stdafx.h" /FD /GZ  /c
-# ADD CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR /Yu"stdafx.h" /FD /GZ   /c
+# ADD BASE CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Yu"stdafx.h" /FD /GZ /c
+# ADD CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR /Yu"stdafx.h" /FD /GZ /c
 # ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /win32
 # ADD MTL /nologo /D "_DEBUG" /mktyplib203 /win32
 # ADD BASE RSC /l 0x419 /d "_DEBUG" /d "_AFXDLL"
@@ -77,7 +79,7 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=link.exe
 # ADD BASE LINK32 /nologo /subsystem:windows /debug /machine:I386 /pdbtype:sept
-# ADD LINK32 /nologo /subsystem:windows /debug /machine:I386 /pdbtype:sept
+# ADD LINK32 /nologo /subsystem:windows /debug /machine:I386 /out:"..\..\..\bin\MSVC_06_Debug/CreateWnd.exe" /pdbtype:sept
 
 !ENDIF 
 
@@ -90,31 +92,31 @@ LINK32=link.exe
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 # Begin Source File
 
-SOURCE=.\ConstantListBox.cpp
+SOURCE=..\..\ConstantListBox.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\CreateWnd.cpp
+SOURCE=..\..\CreateWnd.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\CreateWnd.rc
+SOURCE=..\..\CreateWnd.rc
 # End Source File
 # Begin Source File
 
-SOURCE=.\CreateWndDlg.cpp
+SOURCE=..\..\CreateWndDlg.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\CreateWndDlg_Fill.cpp
+SOURCE=..\..\CreateWndDlg_Fill.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\FlagListCtrl.cpp
+SOURCE=..\..\FlagListCtrl.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\StdAfx.cpp
+SOURCE=..\..\StdAfx.cpp
 # ADD CPP /Yc"stdafx.h"
 # End Source File
 # End Group
@@ -123,27 +125,27 @@ SOURCE=.\StdAfx.cpp
 # PROP Default_Filter "h;hpp;hxx;hm;inl"
 # Begin Source File
 
-SOURCE=.\ConstantListBox.h
+SOURCE=..\..\ConstantListBox.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\CreateWnd.h
+SOURCE=..\..\CreateWnd.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\CreateWndDlg.h
+SOURCE=..\..\CreateWndDlg.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\FlagListCtrl.h
+SOURCE=..\..\FlagListCtrl.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\Resource.h
+SOURCE=..\..\Resource.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\StdAfx.h
+SOURCE=..\..\StdAfx.h
 # End Source File
 # End Group
 # Begin Group "Resource Files"
@@ -151,16 +153,16 @@ SOURCE=.\StdAfx.h
 # PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
 # Begin Source File
 
-SOURCE=.\res\CreateWnd.ico
+SOURCE=..\..\res\CreateWnd.ico
 # End Source File
 # Begin Source File
 
-SOURCE=.\res\CreateWnd.rc2
+SOURCE=..\..\res\CreateWnd.rc2
 # End Source File
 # End Group
 # Begin Source File
 
-SOURCE=.\ReadMe.txt
+SOURCE=..\..\ReadMe.txt
 # End Source File
 # End Target
 # End Project
