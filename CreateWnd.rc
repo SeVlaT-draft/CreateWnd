@@ -1,0 +1,270 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CreateWnd.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CreateWnd.ico"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CreateWnd"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "CreateWnd Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    COMBOBOX        IDC_COMBO1,81,58,48,70,CBS_SIMPLE | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CREATEWND_DIALOG DIALOGEX 0, 0, 464, 335
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CreateWnd"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Window",IDC_WNDPLACE,7,7,86,78
+    LTEXT           "Style",IDC_STATIC,121,7,16,8
+    CONTROL         "List1",IDC_STYLELIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,121,57,165,241
+    LTEXT           "StyleEx",IDC_STATIC,292,7,24,8
+    CONTROL         "List1",IDC_EXSTYLELIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,292,20,165,279
+    GROUPBOX        "Parent",IDC_STATIC,7,86,48,35
+    CONTROL         "This",IDC_PARENT_THIS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,14,96,29,10
+    CONTROL         "Screen",IDC_PARENT_SCREEN,"Button",BS_AUTORADIOBUTTON,
+                    14,107,39,10
+    PUSHBUTTON      "SetParent",IDC_SETPARENT,61,90,50,14
+    LTEXT           "Class",IDC_STATIC,7,128,18,8
+    EDITTEXT        IDC_CLASS,7,136,65,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Test",IDC_TESTCLASS,78,136,19,14
+    LTEXT           "Title",IDC_STATIC,7,152,14,8
+    EDITTEXT        IDC_TITLE,7,162,65,14,ES_AUTOHSCROLL
+    CONTROL         "Show after creation",IDC_SHOWAFTERCREATION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,184,77,10
+    LISTBOX         IDC_SWPARAM,7,198,108,60,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Create",IDC_CREATE,7,265,36,14
+    PUSHBUTTON      "Create later",IDC_CREATELATER,50,265,45,14
+    PUSHBUTTON      "SetWindowLong",IDC_SWL,7,282,65,14
+    LTEXT           "hWnd",IDC_STATIC,7,302,20,8
+    EDITTEXT        IDC_HWINDOW,7,314,65,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ERRORDESCR,80,304,377,24,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_VSCROLL
+    CONTROL         "List1",IDC_STYLEGROUPLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,145,7,140,43
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CreateWnd MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CreateWnd\0"
+            VALUE "LegalCopyright", "Copyright (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CreateWnd.EXE\0"
+            VALUE "ProductName", "CreateWnd Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_CREATEWND_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 457
+        VERTGUIDE, 14
+        VERTGUIDE, 72
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 328
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ABOUTBOX DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 6, 0
+0x6867, 0x2067, 0x006a, 
+    IDC_COMBO1, 0x403, 3, 0
+0x6867, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0x6867, 0x6b6a, 0x6b67, "\000" 
+    IDC_COMBO1, 0x403, 6, 0
+0x6a68, 0x686b, 0x006b, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About CreateWnd..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\CreateWnd.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
